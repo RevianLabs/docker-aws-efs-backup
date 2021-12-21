@@ -1,6 +1,6 @@
 FROM centos:7
 
-# ADFS_CLI_URL = the name of the S3 bucket used for the backup. Ensure it is created and accessible by the ECS execution role.
+# S3_BUCKET_NAME = the name of the S3 bucket used for the backup. Ensure it is created and accessible by the ECS execution role.
 ENV S3_BUCKET_NAME "efs_backup"
 
 # MAX_FILE_AGE = files older than this value will be backed up
